@@ -1,12 +1,28 @@
-# Installation
+# Rest Collector
 
-## Prerequisites
+Simple REST API using flask and MongoDB.
 
-- Pythhon 3.9 | 🏗 [Installation instructions]()
-- Pipenv | 🏗 [Installation instructions](https://github.com/pypa/pipenv#installation)
-- MongoDB | 🏗 [Installation instructions](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials)
+## Getting started
 
+If you haven't Docker yet, check the installation guide [here](https://docs.docker.com/engine/install/ubuntu/).
 
-# Run server
+### Start the server
+```
+docker-compose up -d    // run container in background
+docker ps               // check running containers
+watch docker logs CONTAINER_ID  // show live logs
+```
 
-`FLASK_APP=src/server.py flask run --host=0.0.0.0`
+The API should now be accessible from `0.0.0.0:5000` by default.
+
+### Stop the server
+```
+docker-compose down
+```
+
+## Features
+There's no features yet.
+
+## License
+
+This project has no license yet.
